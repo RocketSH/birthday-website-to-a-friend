@@ -4,15 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>om mani padme hum</title>
+    <title>ཨོཾ་མ་ཎི་པདྨེ་ཧཱུྃ</title>
+    <link rel="icon" href="favicon/android-icon-36x36.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
 		<div class="btn-wrapper">
-			<div data-key="65" class="btn">
-				<p class="click-me">Click me</p>
-			</div>
+			<div class="btn" onclick="playAudio('sounds/wow.wav')">
+				<p>CLICK ME</p>
+      </div>
 
-			<audio data-key="65" src="sounds/wow.wav"></audio>
+      <script>
+        function playAudio(url) {
+          new Audio(url).play();
+          setTimeout(() => { window.location.href = "main-content.html"},3500)
+        }
+      </script>
   </body>
 </html>
