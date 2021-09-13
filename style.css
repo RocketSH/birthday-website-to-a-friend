@@ -20,20 +20,19 @@ html {
 }
 
 .btn {
-  border: 0.2rem solid #888888;
+  border: 0.1rem solid #888888;
   border-radius: 0.5rem;
-  margin: 1.5rem;
+  /* margin: 1.5rem; */
   font-size: 1.5rem;
-  padding: 0.5rem 0.5rem;
   transition: all 0.07s ease;
   width: 10rem;
   text-align: center;
+  text-decoration: none;
 
-  box-shadow: 3px 5px #888888;
+  box-shadow: 2px 3.5px #888888;
   transform: translateY(45%);
 
   font-size: 1.5rem;
-  text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: #888888;
   text-shadow: 0 0 0.2rem whitesmoke;
@@ -43,10 +42,13 @@ html {
 
 .btn:hover {
   cursor: pointer;
+
   box-shadow: 0 0 30px 0 #f1e5b9;
   border: #f1e5b9;
-  width: 15rem;
   background-color: #fce287;
   color: white;
   text-shadow: none;
+
+  width: 15rem;
+  padding: 1rem;
 }

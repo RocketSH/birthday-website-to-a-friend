@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>祝壽</title>
+    <link
+      rel="icon"
+      href="favicon/android-icon-36x36.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Kaisei+Tokumin&family=Nunito:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="hero">
+      <h1 contenteditable>㊗️豹力滿滿🐆ཨོཾ་མ་ཎི་པདྨེ་ཧཱུྃ🔥</h1>
+    </div>
+
+    <section class="card-content">
+      <blockquote contenteditable="true">
+        <p>Dankon, pro via subteno.</p>
+        <p>Dankon, ke vi pelis min persecuti mian revan vivo.</p>
+        <p>Dankon, ke mi kultivis tiun programan plantidon en mia menso.</p>
+        <p>Dankon, pro ĉio.</p>
+      </blockquote>
+
+      <figcaption>-- Leopardeto</figcaption>
+    </section>
+
+    <script>
+      const hero = document.querySelector(".hero");
+      const text = hero.querySelector("h1");
+      const walk = 450; // 500px
+
+      function shadow(e) {
+        const { offsetWidth: width, offsetHeight: height } = hero;
+        let { offsetX: x, offsetY: y } = e;
+
+        if (this !== e.target) {
+          x = x + e.target.offsetLeft;
+          y = y + e.target.offsetTop;
+        }
+
+        const xWalk = Math.round((x / width) * walk - walk / 2);
+        const yWalk = Math.round((y / height) * walk - walk / 2);
+
+        text.style.textShadow = `
+				${xWalk}px ${yWalk}px 0 rgba(255,255,255,0.7),
+				${xWalk * -1}px ${yWalk}px 0 rgba(100,171,113,0.7),
+				${yWalk}px ${xWalk * -1}px 0 rgba(219,32,20,0.8),
+				${yWalk * -1}px ${xWalk}px 0 rgba(245,226,2,0.7)
+			`;
+      }
+
+      hero.addEventListener("mousemove", shadow);
+    </script>
+  </body>
+</html>

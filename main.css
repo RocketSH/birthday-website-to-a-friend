@@ -1,0 +1,33 @@
+html {
+  font-size: 10px;
+  background: no-repeat center/45%
+    url("./london-diamond-way-london-buddha-statue.jpeg");
+}
+
+body {
+  margin: 0;
+  font-family: "Kaisei Tokumin", serif;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #240d70;
+
+  position: relative;
+}
+
+h1 {
+  text-shadow: 10px 10px 0 rgba(109, 53, 0, 0.5);
+  font-size: 7rem;
+}
+
+.card-content {
+  position: absolute;
+  top: 0;
+  margin: 3rem 2rem;
+  font-size: medium;
+  font-weight: bold;
+}
