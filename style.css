@@ -1,0 +1,52 @@
+html {
+  font-size: 10px;
+  background: url("./CuteBuddha.gif") bottom;
+  background-size: auto 36rem;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.btn-wrapper {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  border: 0.2rem solid #888888;
+  border-radius: 0.5rem;
+  margin: 1.5rem;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.5rem;
+  transition: all 0.07s ease;
+  width: 10rem;
+  text-align: center;
+
+  box-shadow: 3px 5px #888888;
+  transform: translateY(45%);
+
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #888888;
+  text-shadow: 0 0 0.2rem whitesmoke;
+
+  transition: all 0.2s ease-in;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 30px 0 #f1e5b9;
+  border: #f1e5b9;
+  width: 15rem;
+  background-color: #fce287;
+  color: white;
+  text-shadow: none;
+}
