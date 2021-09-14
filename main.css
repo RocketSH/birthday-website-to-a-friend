@@ -31,3 +31,30 @@ h1 {
   font-size: medium;
   font-weight: bold;
 }
+
+/* For mobile phones: */
+@media only screen and (max-width: 450px) {
+  html {
+    background: no-repeat center/85%
+      url("./images/london-diamond-way-london-buddha-statue.jpeg");
+  }
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #240d70;
+
+    position: relative;
+  }
+
+  h1 {
+    text-shadow: 10px 10px 0 rgba(109, 53, 0, 0.5);
+    font-size: 2.8rem;
+  }
+
+  .card-content {
+    font-size: inherit;
+    font-weight: normal;
+  }
+}
