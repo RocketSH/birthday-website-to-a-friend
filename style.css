@@ -1,6 +1,6 @@
 html {
   font-size: 10px;
-  background: url("./images/CuteBuddha.gif") bottom;
+  background: left 8% / 15% 90% repeat url("./images/CuteBuddha.gif");
   background-size: auto 36rem;
 }
 
@@ -50,5 +50,5 @@ html {
   text-shadow: none;
 
   width: 15rem;
-  padding: 1rem;
+  padding: 1.5rem;
 }

@@ -10,14 +10,13 @@
   </head>
   <body>
 		<div class="btn-wrapper">
-			<div class="btn" onclick="playAudio('sounds/wow.wav')">
+			<a href="main-content.html" class="btn" onmouseenter="playAudio('sounds/wow.wav')">
 				<p>CLICK ME</p>
-      </div>
+      </a>
 
       <script>
         function playAudio(url) {
           new Audio(url).play();
-          setTimeout(() => { window.location.href = "main-content.html"},3500)
         }
       </script>
   </body>
