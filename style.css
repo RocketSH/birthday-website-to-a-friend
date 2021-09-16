@@ -74,7 +74,9 @@ html {
   /* For desktop: */
   html {
     font-size: 10px;
-    background: left 8% / 15% 90% repeat url("./images/CuteBuddha.gif");
-    background-size: auto 36rem;
+    background: center/ 30% 35% url("./images/CuteBuddha.gif");
+  }
+  .btn {
+    transform: translateY(-235%);
   }
 }
